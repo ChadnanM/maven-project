@@ -11,8 +11,9 @@ strategy:
 	  
 	windows:
 	  operatingSystem: 'windows-latest'
-pool:
-  vmImage: $(operatingSystem)
+	  
+    pool:
+      vmImage: $(operatingSystem)
 
 steps:
 - script: echo Running on $(operatingSystem)
